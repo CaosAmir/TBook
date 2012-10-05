@@ -72,5 +72,9 @@ public class TBookSchema implements Serializable{
         this.ex = ex;
     }
     
+    public void addEx(List<Exercise> exercise){
+        ex.addAll(exercise);
+    }
+    
     
 }
