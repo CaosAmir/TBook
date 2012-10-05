@@ -3,13 +3,6 @@ package edu.chl.tbook;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- * The complete shop as a singleton
- * 
- * NOTE: Uses Java 1.7
- *
- * @author hajo
- */
 public enum TBook {
 
     INSTANCE;
