@@ -61,7 +61,7 @@ public class TBookMessage implements Serializable{
         return postTime;
     }
 
-    public void setPostTime(Date postDate) {
+    public void setPostTime(Long postTime) {
         this.postTime = postTime;
     }
 
