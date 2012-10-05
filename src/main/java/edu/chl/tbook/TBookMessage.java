@@ -26,12 +26,9 @@ public class TBookMessage implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    @OneToOne
     private TBookUser fromUser = null;
-    @OneToOne
     private TBookUser toUser = null;
     private TBookSchema toSchema = null;
-    @Temporal(javax.persistence.TemporalType.DATE)
     private Long postTime;
     private String text;
     

@@ -45,7 +45,7 @@ public abstract class AbstractDAO<T, K> implements IDAO<T, K> {
             em.persist(t);
             em.getTransaction().commit();
         } catch (Exception ex) {
-            //DbExceptionHandler.handle(ex);
+            ex.printStackTrace();
         } finally {
             if (em != null) {
                 em.close();

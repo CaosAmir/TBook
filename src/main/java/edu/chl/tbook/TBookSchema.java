@@ -17,14 +17,14 @@ public class TBookSchema implements Serializable{
     @OneToOne
     private TBookUser owner;
     @ManyToMany
-    private Exercise ex;
+    private List<Exercise> ex;
     private Long datum;
     private String comment;
 
     public TBookSchema() {
     }
 
-    public TBookSchema(String comment, TBookUser owner, Exercise ex) {
+    public TBookSchema(String comment, TBookUser owner, List<Exercise> ex) {
         this.datum = Calendar.getInstance().getTimeInMillis();
         this.comment = comment;
         this.owner = owner;
@@ -64,11 +64,11 @@ public class TBookSchema implements Serializable{
         this.owner = owner;
     }
 
-    public Exercise getEx() {
+    public List<Exercise> getEx() {
         return ex;
     }
 
-    public void setEx(Exercise ex) {
+    public void setEx(List<Exercise> ex) {
         this.ex = ex;
     }
     
